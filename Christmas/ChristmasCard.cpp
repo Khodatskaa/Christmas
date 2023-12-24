@@ -9,7 +9,7 @@ void ChristmasCard::printFrame() const {
 
 void ChristmasCard::printText(const std::string& text) const {
     std::cout << "| " << text;
-    int numSpaces = 26 - text.length();
+    int numSpaces = 25 - text.length();
     for (int i = 0; i < numSpaces; ++i) {
         std::cout << " ";
     }
