@@ -1,2 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SourceFiles">
+      <UniqueIdentifier>{503b44c2-b414-4284-972a-9f9f7a97bc37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{5e0b605a-6912-47b8-919e-f71c52e70786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Santa">
+      <UniqueIdentifier>{b3981edd-74b2-4ac7-87bb-9db5b83d3166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sleigh">
+      <UniqueIdentifier>{926cfe4e-9196-47d8-a2b7-16dd99a5d3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CristmasCard">
+      <UniqueIdentifier>{6475eaa3-3683-4bd7-8962-40522fd0db04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Sleigh.cpp">
+      <Filter>Sleigh</Filter>
+    </ClCompile>
+    <ClCompile Include="Santa.cpp">
+      <Filter>Santa</Filter>
+    </ClCompile>
+    <ClCompile Include="ChristmasCard.cpp">
+      <Filter>CristmasCard</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Sleigh.h">
+      <Filter>Sleigh</Filter>
+    </ClInclude>
+    <ClInclude Include="Santa.h">
+      <Filter>Santa</Filter>
+    </ClInclude>
+    <ClInclude Include="ChristmasCard.h">
+      <Filter>CristmasCard</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
