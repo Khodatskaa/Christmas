@@ -12,6 +12,7 @@ public:
 private:
     Sleigh sleigh;
     ChristmasCard christmasCard;
+    std::string christmasCardMessage; 
     int giftPosition;
     static const int gridSize = 20;  
     void drawGame() const;

@@ -5,10 +5,14 @@
 
 class ChristmasCard {
 public:
-    ChristmasCard();
+    ChristmasCard();  
+    ChristmasCard(const std::string& userText);
     void displayCard() const;
 
 private:
+    std::string userText;
+    int frameWidth;  
+    void calculateFrameWidth();  
     void printFrame() const;
     void printText(const std::string& text) const;
 };

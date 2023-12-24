@@ -5,6 +5,11 @@
 
 Game::Game() : sleigh(10), giftPosition(0) {
     srand(static_cast<unsigned>(time(0)));
+
+    std::cout << "Enter a message from Santa: ";
+    std::getline(std::cin, christmasCardMessage);
+
+    christmasCard = ChristmasCard(christmasCardMessage);
 }
 
 void Game::drawGame() const {
@@ -17,7 +22,7 @@ void Game::drawGame() const {
             }
             else if (i == 0 && j == giftPosition) {
                 if (sleigh.getPosition() == giftPosition) {
-                    std::cout << "P"; 
+                    christmasCard.displayCard();
                 }
                 else {
                     std::cout << "G";
@@ -28,10 +33,6 @@ void Game::drawGame() const {
             }
         }
         std::cout << std::endl;
-    }
-
-    if (sleigh.getPosition() == giftPosition) {
-        christmasCard.displayCard();
     }
 }
 
@@ -61,9 +62,10 @@ void Game::play() {
         }
 
         if (sleigh.getPosition() == giftPosition) {
-            drawGame(); 
+            drawGame();
             std::cout << "Santa caught the gift! Merry Christmas!" << std::endl;
             break;
         }
     }
 }
+

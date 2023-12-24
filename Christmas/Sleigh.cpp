@@ -29,3 +29,4 @@ int Sleigh::getPosition() const
 {
 	return position;
 }
+
